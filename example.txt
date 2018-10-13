@@ -1,0 +1,35 @@
+(dbt-runner) -bash-4.1$ dbt run --target qa_garden --models +squash
+Found 1 operations, 94 macros, 0 analyses, 0 seed files, 4 tests, 136 models, 0 archives
+
+19:38:37 | Concurrency: 4 threads (target='qa_garden')
+19:38:37 |
+19:38:37 | 1 of 12 START table model WORKSPACE_ETL.SWINE [RUN]
+19:38:37 | 2 of 12 START table model WORKSPACE_RTRBI.PEARLS...... [RUN]
+19:38:46 | 1 of 12 OK created table model WORKSPACE_ETL.SWINE [SUCCESS 1 in 8.75s]
+19:38:47 | 2 of 12 OK created table model WORKSPACE_RTRBI.PEARLS. [SUCCESS 1 in 9.54s]
+19:38:47 | 3 of 12 START table model WORKSPACE_RTRBI.CABBAGE.... [RUN]
+19:38:47 | 4 of 12 START table model WORKSPACE_ANALYTICS.CABBAGE_ANALYTICS [RUN]
+19:39:10 | 4 of 12 OK created table model WORKSPACE_ANALYTICS.CABBAGE_ANALYTICS [SUCCESS 1 in 22.94s]
+19:39:59 | 3 of 12 OK created table model WORKSPACE_RTRBI.CABBAGE [SUCCESS 1 in 72.57s]
+19:39:59 | 5 of 12 START table model WORKSPACE_RTRBI.PEAS [RUN]
+20:29:10 | 5 of 12 OK created table model WORKSPACE_RTRBI.PEAS [SUCCESS 1 in 2950.26s]
+20:29:10 | 6 of 12 START table model WORKSPACE_RTRBI.CARROTS [RUN]
+20:29:57 | 6 of 12 OK created table model WORKSPACE_RTRBI.CARROTS [SUCCESS 1 in 47.80s]
+20:29:57 | 7 of 12 START table model WORKSPACE_RTRBI.TURNIPS.. [RUN]
+20:29:57 | 8 of 12 START table model WORKSPACE_RTRBI.PARNSIPS....... [RUN]
+20:30:23 | 7 of 12 OK created table model WORKSPACE_RTRBI.TURNIPS [SUCCESS 1 in 25.61s]
+20:30:46 | 8 of 12 OK created table model WORKSPACE_RTRBI.PARNSIPS.. [SUCCESS 1 in 48.62s]
+20:30:46 | 9 of 12 START table model WORKSPACE_RTRBI.BEETS [RUN]
+20:31:19 | 9 of 12 OK created table model WORKSPACE_RTRBI.BEETS [SUCCESS 1 in 33.23s]
+20:31:19 | 10 of 12 START table model WORKSPACE_RTRBI.SPANISH_MOSS [RUN]
+20:31:28 | 10 of 12 OK created table model WORKSPACE_RTRBI.SPANISH_MOSS [SUCCESS 1 in 8.44s]
+20:31:28 | 11 of 12 START table model WORKSPACE_RTRBI.ACORNS [RUN]
+20:31:34 | 11 of 12 OK created table model WORKSPACE_RTRBI.ACORNS [SUCCESS 1 in 6.42s]
+20:31:34 | 12 of 12 START table model WORKSPACE_RTRBI.SQUASH... [RUN]
+20:33:10 | 12 of 12 OK created table model WORKSPACE_RTRBI.SQUASH [SUCCESS 1 in 96.02s]
+20:33:10 |
+20:33:10 | Finished running 12 table models in 3276.77s.
+
+Completed successfully
+
+Done. PASS=12 ERROR=0 SKIP=0 TOTAL=12
